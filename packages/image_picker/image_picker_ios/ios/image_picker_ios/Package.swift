@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "image_picker_ios",
-            targets: ["image_picker_ios"]),
+            targets: ["image_picker_ios", "image_picker_ios_test"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,7 +23,21 @@ let package = Package(
             dependencies: [
             ],
             path: "./Classes",
-            publicHeadersPath: "."
+            sources: ["image_picker_ios"],
+            publicHeadersPath: "Public",
+            cSettings: [
+                .headerSearchPath("Public/image_picker_ios"),
+                .headerSearchPath("Private/image_picker_ios"),
+                .headerSearchPath("Test/image_picker_ios")
+            ]
+        ),
+        .target(
+            name: "image_picker_ios_test",
+            dependencies: [
+            ],
+            path: "./Classes",
+            sources: ["image_picker_ios_test"],
+            publicHeadersPath: "Test"
         ),
     ]
 )
