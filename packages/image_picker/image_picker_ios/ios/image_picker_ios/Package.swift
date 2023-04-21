@@ -19,6 +19,7 @@ let package = Package(
                 .product(name: "FlutterFramework", package: "FlutterFramework"),
             ],
             cSettings: [
+                .headerSearchPath("include/image_picker_ios"),
                 .headerSearchPath("../../Classes"),
                 .headerSearchPath("../../Classes/image_picker_ios"),
             ]
@@ -33,8 +34,8 @@ let package = Package(
                 .process("Assets/TestImages/")
             ],
             cSettings: [
-                .headerSearchPath("../../Classes"),
-                .headerSearchPath("../../Classes/image_picker_ios"),
+                .headerSearchPath("../../Sources/ImagePicker/include"),
+                .headerSearchPath("../../Sources/ImagePicker/include/image_picker_ios"),
             ]
         ),
 
