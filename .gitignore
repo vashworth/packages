@@ -45,7 +45,9 @@ xcuserdata/
 generated_plugin_registrant.*
 GeneratedPluginRegistrant.*
 
-# Gradle 
+.swiftpm
+
+# Gradle
 **/gradle-wrapper.jar
 .gradle/
 gradlew

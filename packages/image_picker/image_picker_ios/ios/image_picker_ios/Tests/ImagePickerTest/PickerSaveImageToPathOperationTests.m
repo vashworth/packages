@@ -4,10 +4,11 @@
 
 #import <OCMock/OCMock.h>
 
-@import image_picker_ios;
-@import image_picker_ios.Test;
+@import ImagePicker;
 @import UniformTypeIdentifiers;
 @import XCTest;
+
+#import "FLTPHPickerSaveImageToPathOperation.h"
 
 @interface PickerSaveImageToPathOperationTests : XCTestCase
 
@@ -16,7 +17,7 @@
 @implementation PickerSaveImageToPathOperationTests
 
 - (void)testSaveWebPImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"webpImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"webpImage"
                                                              withExtension:@"webp"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -25,7 +26,7 @@
 }
 
 - (void)testSavePNGImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"pngImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"pngImage"
                                                              withExtension:@"png"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -34,7 +35,7 @@
 }
 
 - (void)testSaveJPGImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"jpgImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"jpgImage"
                                                              withExtension:@"jpg"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -43,7 +44,7 @@
 }
 
 - (void)testSaveGIFImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"gifImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"gifImage"
                                                              withExtension:@"gif"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -84,7 +85,7 @@
 }
 
 - (void)testSaveBMPImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"bmpImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"bmpImage"
                                                              withExtension:@"bmp"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -93,7 +94,7 @@
 }
 
 - (void)testSaveHEICImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"heicImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"heicImage"
                                                              withExtension:@"heic"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -103,7 +104,7 @@
 
 - (void)testSaveWithOrientation API_AVAILABLE(ios(14)) {
   NSURL *imageURL =
-      [[NSBundle bundleForClass:[self class]] URLForResource:@"jpgImageWithRightOrientation"
+      [SWIFTPM_MODULE_BUNDLE URLForResource:@"jpgImageWithRightOrientation"
                                                withExtension:@"jpg"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -139,7 +140,7 @@
 }
 
 - (void)testSaveICNSImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"icnsImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"icnsImage"
                                                              withExtension:@"icns"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -148,7 +149,7 @@
 }
 
 - (void)testSaveICOImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"icoImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"icoImage"
                                                              withExtension:@"ico"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -157,7 +158,7 @@
 }
 
 - (void)testSaveProRAWImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"proRawImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"proRawImage"
                                                              withExtension:@"dng"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -166,7 +167,7 @@
 }
 
 - (void)testSaveSVGImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"svgImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"svgImage"
                                                              withExtension:@"svg"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -175,7 +176,7 @@
 }
 
 - (void)testSaveTIFFImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"tiffImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"tiffImage"
                                                              withExtension:@"tiff"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -183,7 +184,7 @@
 }
 
 - (void)testNonexistentImage API_AVAILABLE(ios(14)) {
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"bogus"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"bogus"
                                                              withExtension:@"png"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
@@ -239,7 +240,7 @@
 - (void)testSavePNGImageWithoutFullMetadata API_AVAILABLE(ios(14)) {
   id photoAssetUtil = OCMClassMock([PHAsset class]);
 
-  NSURL *imageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"pngImage"
+  NSURL *imageURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"pngImage"
                                                              withExtension:@"png"];
   NSItemProvider *itemProvider = [[NSItemProvider alloc] initWithContentsOfURL:imageURL];
   PHPickerResult *result = [self createPickerResultWithProvider:itemProvider];
