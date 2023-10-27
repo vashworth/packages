@@ -16,7 +16,7 @@ Downloaded by pub (not CocoaPods).
   s.documentation_url = 'https://pub.dev/packages/image_picker_ios'
   s.source_files = 'image_picker_ios/Sources/image_picker_ios/**/*.{h,m}'
   s.public_header_files = 'image_picker_ios/Sources/image_picker_ios/**/*.h'
-  s.module_map = 'image_picker_ios/Sources/ImagePickerPlugin.modulemap'
+  s.module_map = 'image_picker_ios/Sources/image_picker_ios/ImagePickerPlugin.modulemap'
   s.dependency 'Flutter'
   s.platform = :ios, '11.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }

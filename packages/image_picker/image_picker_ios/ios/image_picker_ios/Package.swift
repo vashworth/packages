@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "image_picker_ios",
             dependencies: [],
-            exclude: ["ImagePickerPlugin.modulemap"],
+            exclude: ["ImagePickerPlugin.modulemap", "image_picker_ios-umbrella.h"],
             cSettings: [
                 .headerSearchPath("include/image_picker_ios"),
             ]
