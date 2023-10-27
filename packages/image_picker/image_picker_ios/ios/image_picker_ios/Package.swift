@@ -9,7 +9,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "image_picker_ios",
-            targets: ["image_picker_ios", "image_picker_ios_test"]),
+            targets: ["image_picker_ios",]),
+        .library(
+            name: "image_picker_ios_test_lib",
+            targets: ["image_picker_ios_test",]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,24 +23,19 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "image_picker_ios",
-            dependencies: [
-            ],
-            path: "./Classes",
-            sources: ["image_picker_ios"],
-            publicHeadersPath: "Public",
+            dependencies: [],
+            exclude: ["ImagePickerPlugin.modulemap"],
             cSettings: [
-                .headerSearchPath("Public/image_picker_ios"),
-                .headerSearchPath("Private/image_picker_ios"),
-                .headerSearchPath("Test/image_picker_ios")
+                .headerSearchPath("include/image_picker_ios"),
             ]
         ),
-        .target(
-            name: "image_picker_ios_test",
-            dependencies: [
-            ],
-            path: "./Classes",
-            sources: ["image_picker_ios_test"],
-            publicHeadersPath: "Test"
-        ),
+       .target(
+           name: "image_picker_ios_test",
+           dependencies: [],
+           path: "Sources",
+           sources: ["image_picker_ios_test"],
+           publicHeadersPath: "image_picker_ios"
+       ),
+       // Can't use testTarget because it requires Flutter framework
     ]
 )

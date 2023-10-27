@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		6801C8392555D726009DAF8D /* ImagePickerFromGalleryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6801C8382555D726009DAF8D /* ImagePickerFromGalleryUITests.m */; };
 		782C2B45299ECE33008DC703 /* jpgImageWithRightOrientation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 782C2B44299ECE33008DC703 /* jpgImageWithRightOrientation.jpg */; };
 		782C2B46299ECE33008DC703 /* jpgImageWithRightOrientation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 782C2B44299ECE33008DC703 /* jpgImageWithRightOrientation.jpg */; };
+		783C7B7F2AEC340F00F50075 /* FlutterPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 783C7B7E2AEC340F00F50075 /* FlutterPackage */; };
+		783C7B892AEC367300F50075 /* FlutterTestPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 783C7B882AEC367300F50075 /* FlutterTestPackage */; };
 		7865C5E12941326F0010E17F /* bmpImage.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 7865C5E02941326F0010E17F /* bmpImage.bmp */; };
 		7865C5E22941326F0010E17F /* bmpImage.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 7865C5E02941326F0010E17F /* bmpImage.bmp */; };
 		7865C5E4294132D50010E17F /* svgImage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7865C5E3294132D50010E17F /* svgImage.svg */; };
@@ -34,7 +36,6 @@
 		7865C5FD294157BC0010E17F /* icnsImage.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7865C5FB294157BB0010E17F /* icnsImage.icns */; };
 		7865C5FF294252A60010E17F /* proRawImage.dng in Resources */ = {isa = PBXBuildFile; fileRef = 7865C5FE294252A60010E17F /* proRawImage.dng */; };
 		7865C600294252A60010E17F /* proRawImage.dng in Resources */ = {isa = PBXBuildFile; fileRef = 7865C5FE294252A60010E17F /* proRawImage.dng */; };
-		7894954429CCFA860066B8D8 /* FlutterPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7894954329CCFA860066B8D8 /* FlutterPackage */; };
 		86430DF9272D71E9002D9D6C /* gifImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9FC8F0E8229FA49E00C8D58F /* gifImage.gif */; };
 		86E9A893272754860017E6E0 /* PickerSaveImageToPathOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E9A892272754860017E6E0 /* PickerSaveImageToPathOperationTests.m */; };
 		86E9A894272754A30017E6E0 /* webpImage.webp in Resources */ = {isa = PBXBuildFile; fileRef = 86E9A88F272747B90017E6E0 /* webpImage.webp */; };
@@ -96,6 +97,7 @@
 		68B9AF71243E4B3F00927CE4 /* ImagePickerPluginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerPluginTests.m; sourceTree = "<group>"; };
 		68F4B463228B3AB500C25614 /* PhotoAssetUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAssetUtilTests.m; sourceTree = "<group>"; };
 		782C2B44299ECE33008DC703 /* jpgImageWithRightOrientation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jpgImageWithRightOrientation.jpg; sourceTree = "<group>"; };
+		783C7B7C2AEC33E700F50075 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = Flutter/Packages; sourceTree = "<group>"; };
 		7865C5E02941326F0010E17F /* bmpImage.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = bmpImage.bmp; sourceTree = "<group>"; };
 		7865C5E3294132D50010E17F /* svgImage.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = svgImage.svg; sourceTree = "<group>"; };
 		7865C5E62941374F0010E17F /* heicImage.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = heicImage.heic; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 		7865C5EC294137AB0010E17F /* tiffImage.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = tiffImage.tiff; sourceTree = "<group>"; };
 		7865C5FB294157BB0010E17F /* icnsImage.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icnsImage.icns; sourceTree = "<group>"; };
 		7865C5FE294252A60010E17F /* proRawImage.dng */ = {isa = PBXFileReference; lastKnownFileType = file; path = proRawImage.dng; sourceTree = "<group>"; };
-		7894954229CCFA7B0066B8D8 /* FlutterPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FlutterPackage; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
 		7AFFD8ED1D35381100E5BB4D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783C7B892AEC367300F50075 /* FlutterTestPackage in Frameworks */,
 				CBF353779C4D29AD01A31A86 /* libPods-RunnerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7894954429CCFA860066B8D8 /* FlutterPackage in Frameworks */,
+				783C7B7F2AEC340F00F50075 /* FlutterPackage in Frameworks */,
 				1F82B5BA31D1495A385E55DE /* libPods-Runner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,14 +214,6 @@
 			path = RunnerUITests;
 			sourceTree = "<group>";
 		};
-		7894954129CCFA7B0066B8D8 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				7894954229CCFA7B0066B8D8 /* FlutterPackage */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		82D0032DA012C2DAE99F7A2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +226,7 @@
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
+				783C7B7C2AEC33E700F50075 /* Packages */,
 				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
 				9740EEB21CF90195004384FC /* Debug.xcconfig */,
 				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
@@ -243,7 +238,6 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
-				7894954129CCFA7B0066B8D8 /* Packages */,
 				680049282280E33D006DD6AB /* TestImages */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
@@ -307,6 +301,9 @@
 				334733F82668136400DCC49E /* PBXTargetDependency */,
 			);
 			name = RunnerTests;
+			packageProductDependencies = (
+				783C7B882AEC367300F50075 /* FlutterTestPackage */,
+			);
 			productName = RunnerTests;
 			productReference = 334733F22668136400DCC49E /* RunnerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -347,7 +344,7 @@
 			);
 			name = Runner;
 			packageProductDependencies = (
-				7894954329CCFA860066B8D8 /* FlutterPackage */,
+				783C7B7E2AEC340F00F50075 /* FlutterPackage */,
 			);
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
@@ -360,7 +357,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "The Flutter Authors";
 				TargetAttributes = {
 					334733F12668136400DCC49E = {
@@ -392,6 +389,10 @@
 				Base,
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
+			packageReferences = (
+				783C7B7D2AEC340F00F50075 /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterPackage" */,
+				783C7B852AEC365E00F50075 /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterTestPackage" */,
+			);
 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -892,10 +893,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		783C7B7D2AEC340F00F50075 /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Flutter/Packages/FlutterPackage;
+		};
+		783C7B852AEC365E00F50075 /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterTestPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Flutter/Packages/FlutterTestPackage;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		7894954329CCFA860066B8D8 /* FlutterPackage */ = {
+		783C7B7E2AEC340F00F50075 /* FlutterPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FlutterPackage;
+		};
+		783C7B882AEC367300F50075 /* FlutterTestPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 783C7B852AEC365E00F50075 /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterTestPackage" */;
+			productName = FlutterTestPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
