@@ -5,7 +5,7 @@
 #import <OCMock/OCMock.h>
 
 @import image_picker_ios;
-@import image_picker_ios.Test;
+@import image_picker_ios_test;
 @import UniformTypeIdentifiers;
 @import XCTest;
 

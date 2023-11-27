@@ -37,6 +37,7 @@ keystore.properties
 **/Flutter/Flutter.podspec
 **/Flutter/Flutter.framework/
 **/Flutter/flutter_assets/
+**/Flutter/Packages
 
 ServiceDefinitions.json
 xcuserdata/
@@ -45,7 +46,7 @@ xcuserdata/
 generated_plugin_registrant.*
 GeneratedPluginRegistrant.*
 
-# Gradle 
+# Gradle
 **/gradle-wrapper.jar
 .gradle/
 gradlew

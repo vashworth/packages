@@ -100,6 +100,7 @@ typedef NS_ENUM(NSInteger, ImagePickerClassType) { UIImagePickerClassType, PHPic
 
 - (void)launchPHPickerWithContext:(nonnull FLTImagePickerMethodCallContext *)context
     API_AVAILABLE(ios(14)) {
+    NSLog(@"Test2");
   PHPickerConfiguration *config =
       [[PHPickerConfiguration alloc] initWithPhotoLibrary:PHPhotoLibrary.sharedPhotoLibrary];
   config.selectionLimit = context.maxImageCount;
