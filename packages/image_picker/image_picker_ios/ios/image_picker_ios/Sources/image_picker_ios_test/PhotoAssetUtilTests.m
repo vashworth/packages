@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 #import "ImagePickerTestImages.h"
+#import "FLTImagePickerPhotoAssetUtil.h"
+#import "FLTImagePickerMetaDataUtil.h"
 
-@import image_picker_ios;
-@import image_picker_ios.Test;
 @import XCTest;
 
 @interface PhotoAssetUtilTests : XCTestCase

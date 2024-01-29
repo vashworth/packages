@@ -3,9 +3,8 @@
 // found in the LICENSE file.
 
 #import "ImagePickerTestImages.h"
+#import "FLTImagePickerImageUtil.h"
 
-@import image_picker_ios;
-@import image_picker_ios.Test;
 @import XCTest;
 
 @interface ImageUtilTests : XCTestCase
@@ -37,7 +36,7 @@
 
 - (void)testScaledImage_ShouldBeCorrectRotation {
   NSURL *imageURL =
-      [[NSBundle bundleForClass:[self class]] URLForResource:@"jpgImageWithRightOrientation"
+      [SWIFTPM_MODULE_BUNDLE URLForResource:@"jpgImageWithRightOrientation"
                                                withExtension:@"jpg"];
   NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
   UIImage *image = [UIImage imageWithData:imageData];

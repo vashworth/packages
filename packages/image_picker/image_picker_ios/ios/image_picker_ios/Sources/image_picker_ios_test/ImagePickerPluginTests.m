@@ -3,9 +3,8 @@
 // found in the LICENSE file.
 
 #import "ImagePickerTestImages.h"
+#import "FLTImagePickerPlugin_Test.h"
 
-@import image_picker_ios;
-@import image_picker_ios.Test;
 @import UniformTypeIdentifiers;
 @import XCTest;
 
@@ -434,7 +433,7 @@
   PHPickerResult *failResult = OCMClassMock([PHPickerResult class]);
   OCMStub([failResult itemProvider]).andReturn(mockFailItemProvider);
 
-  NSURL *tiffURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"tiffImage"
+  NSURL *tiffURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"tiffImage"
                                                             withExtension:@"tiff"];
   NSItemProvider *tiffItemProvider = [[NSItemProvider alloc] initWithContentsOfURL:tiffURL];
   PHPickerResult *tiffResult = OCMClassMock([PHPickerResult class]);
@@ -460,13 +459,13 @@
 - (void)testSavesImages API_AVAILABLE(ios(14)) {
   id mockPickerViewController = OCMClassMock([PHPickerViewController class]);
 
-  NSURL *tiffURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"tiffImage"
+  NSURL *tiffURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"tiffImage"
                                                             withExtension:@"tiff"];
   NSItemProvider *tiffItemProvider = [[NSItemProvider alloc] initWithContentsOfURL:tiffURL];
   PHPickerResult *tiffResult = OCMClassMock([PHPickerResult class]);
   OCMStub([tiffResult itemProvider]).andReturn(tiffItemProvider);
 
-  NSURL *pngURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"pngImage"
+  NSURL *pngURL = [SWIFTPM_MODULE_BUNDLE URLForResource:@"pngImage"
                                                            withExtension:@"png"];
   NSItemProvider *pngItemProvider = [[NSItemProvider alloc] initWithContentsOfURL:pngURL];
   PHPickerResult *pngResult = OCMClassMock([PHPickerResult class]);

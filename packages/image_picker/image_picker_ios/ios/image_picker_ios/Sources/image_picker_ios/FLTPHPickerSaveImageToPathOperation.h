@@ -5,6 +5,8 @@
 #import <Foundation/Foundation.h>
 #import <PhotosUI/PhotosUI.h>
 
+@import image_picker_ios;
+
 #import "FLTImagePickerImageUtil.h"
 #import "FLTImagePickerMetaDataUtil.h"
 #import "FLTImagePickerPhotoAssetUtil.h"

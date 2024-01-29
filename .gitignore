@@ -14,6 +14,7 @@ pubspec.lock
 
 Podfile.lock
 Pods/
+**/Flutter/Packages/FlutterPackage
 .symlinks/
 
 *instrumentscli*.trace
@@ -45,7 +46,7 @@ xcuserdata/
 generated_plugin_registrant.*
 GeneratedPluginRegistrant.*
 
-# Gradle 
+# Gradle
 **/gradle-wrapper.jar
 .gradle/
 gradlew
