@@ -4,6 +4,7 @@
 
 #import <OCMock/OCMock.h>
 
+#import "image_picker_ios/FLTImagePickerPlugin.h"
 #import "FLTPHPickerSaveImageToPathOperation.h"
 
 @import UniformTypeIdentifiers;

@@ -12,14 +12,14 @@ let package = Package(
         .library(name: "FlutterTestPackage", targets: ["FlutterPluginTests"])
     ],
     dependencies: [
-        .package(path: "../FlutterPackage"),
+        .package(path: "../FlutterGeneratedPluginSwiftPackage"),
         .package(name: "image_picker_ios", path: "../../../../../ios/image_picker_ios")
     ],
     targets: [
         .testTarget(
             name: "FlutterPluginTests",
             dependencies: [
-                "FlutterPackage",
+                "FlutterGeneratedPluginSwiftPackage",
                 .product(name: "image_picker_ios_test", package: "image_picker_ios")
             ]
         )

@@ -12,14 +12,14 @@ let package = Package(
         .library(name: "FlutterTestPackage", targets: ["FlutterPluginTests"])
     ],
     dependencies: [
-        .package(path: "../FlutterPackage"),
-       .package(name: "shared_preferences_foundation", path: "../../../../../darwin/shared_preferences_foundation")
+        .package(path: "../FlutterGeneratedPluginSwiftPackage"),
+        .package(name: "shared_preferences_foundation", path: "../../../../../darwin/shared_preferences_foundation")
     ],
     targets: [
         .testTarget(
             name: "FlutterPluginTests",
             dependencies: [
-                "FlutterPackage",
+                "FlutterGeneratedPluginSwiftPackage",
                .product(name: "shared_preferences_foundation_test", package: "shared_preferences_foundation")
             ]
         )
