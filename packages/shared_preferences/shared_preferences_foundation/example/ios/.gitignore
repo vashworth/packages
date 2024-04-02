@@ -11,7 +11,6 @@
 **/DerivedData/
 Icon?
 **/Pods/
-**/Flutter/Packages/FlutterGeneratedPluginSwiftPackage/
 **/.symlinks/
 profile
 xcuserdata
@@ -33,3 +32,5 @@ Runner/GeneratedPluginRegistrant.*
 !default.mode2v3
 !default.pbxuser
 !default.perspectivev3
+
+**/Flutter/Packages/ephemeral
