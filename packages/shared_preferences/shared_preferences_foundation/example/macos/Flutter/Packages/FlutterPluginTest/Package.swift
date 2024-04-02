@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FlutterPluginTests",
+    name: "FlutterPluginTest",
     platforms: [
         .macOS("10.14"),
     ],
@@ -14,7 +14,7 @@ let package = Package(
     ],
     targets: [
         .testTarget(
-            name: "FlutterPluginTests",
+            name: "FlutterPluginTest",
             dependencies: [
                 "FlutterGeneratedPluginSwiftPackage",
                 .product(name: "shared_preferences_foundation_test", package: "shared_preferences_foundation")
