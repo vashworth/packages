@@ -14,9 +14,9 @@ Downloaded by pub (not CocoaPods).
   s.author           = { 'Flutter Dev Team' => 'flutter-dev@googlegroups.com' }
   s.source           = { :http => 'https://github.com/flutter/packages/tree/main/packages/google_maps_flutter/google_maps_flutter/ios' }
   s.documentation_url = 'https://pub.dev/packages/google_maps_flutter_ios'
-  s.source_files = 'Classes/**/*.{h,m}'
-  s.public_header_files = 'Classes/**/*.h'
-  s.module_map = 'Classes/google_maps_flutter_ios.modulemap'
+  s.source_files = 'google_maps_flutter_ios/Sources/google_maps_flutter_ios/**/*.{h,m}'
+  s.public_header_files = 'google_maps_flutter_ios/Sources/google_maps_flutter_ios/**/*.h'
+  s.module_map = 'google_maps_flutter_ios/Sources/google_maps_flutter_ios/google_maps_flutter_ios.modulemap'
   s.dependency 'Flutter'
   # Allow any version up to the next breaking change after the latest version that
   # has been confirmed to be compatible via an example in examples/. See discussion
@@ -31,5 +31,5 @@ Downloaded by pub (not CocoaPods).
   # at which point Cocoapods will resolve to a version of GoogleMaps that has
   # arm64 support.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.resource_bundles = {'google_maps_flutter_ios_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
+  s.resource_bundles = {'google_maps_flutter_ios_privacy' => ['google_maps_flutter_ios/Sources/google_maps_flutter_ios/Resources/PrivacyInfo.xcprivacy']}
 end
