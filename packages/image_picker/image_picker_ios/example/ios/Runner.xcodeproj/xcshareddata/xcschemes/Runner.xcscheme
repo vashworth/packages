@@ -51,20 +51,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "334733F12668136400DCC49E"
-               BuildableName = "RunnerTests.xctest"
-               BlueprintName = "RunnerTests"
-               ReferencedContainer = "container:Runner.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FlutterPluginTests"
-               BuildableName = "FlutterPluginTests"
-               BlueprintName = "FlutterPluginTests"
-               ReferencedContainer = "container:Flutter/Packages/FlutterTestPackage">
+               BlueprintIdentifier = "FlutterPluginTest"
+               BuildableName = "FlutterPluginTest"
+               BlueprintName = "FlutterPluginTest"
+               ReferencedContainer = "container:Flutter/Packages/FlutterPluginTest">
             </BuildableReference>
          </TestableReference>
       </Testables>
