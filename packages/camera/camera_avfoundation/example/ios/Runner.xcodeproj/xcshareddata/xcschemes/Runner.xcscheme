@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1430"
+   LastUpgradeVersion = "1510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -41,10 +41,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03BB76672665316900CE5A93"
-               BuildableName = "RunnerTests.xctest"
-               BlueprintName = "RunnerTests"
-               ReferencedContainer = "container:Runner.xcodeproj">
+               BlueprintIdentifier = "FlutterPluginTest"
+               BuildableName = "FlutterPluginTest"
+               BlueprintName = "FlutterPluginTest"
+               ReferencedContainer = "container:Flutter/Packages/FlutterPluginTest">
             </BuildableReference>
          </TestableReference>
       </Testables>

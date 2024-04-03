@@ -4,6 +4,7 @@
 
 @import camera_avfoundation;
 @import XCTest;
+#import "FLTThreadSafeEventChannel.h"
 #import <OCMock/OCMock.h>
 
 @interface ThreadSafeEventChannelTests : XCTestCase

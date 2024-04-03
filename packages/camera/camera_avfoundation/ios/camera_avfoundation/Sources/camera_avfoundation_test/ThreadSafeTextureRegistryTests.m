@@ -4,6 +4,7 @@
 
 @import camera_avfoundation;
 @import XCTest;
+#import "FLTThreadSafeTextureRegistry.h"
 #import <OCMock/OCMock.h>
 
 @interface ThreadSafeTextureRegistryTests : XCTestCase

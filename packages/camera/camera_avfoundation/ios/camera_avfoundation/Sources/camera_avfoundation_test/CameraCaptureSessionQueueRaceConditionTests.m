@@ -3,8 +3,9 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
 @import XCTest;
+
+#import "CameraPlugin_Test.h"
 
 @interface CameraCaptureSessionQueueRaceConditionTests : XCTestCase
 @end

@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
 @import AVFoundation;
 @import XCTest;
+#import "CameraPermissionUtils.h"
 #import <OCMock/OCMock.h>
 #import "CameraTestUtils.h"
 

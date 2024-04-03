@@ -4,6 +4,7 @@
 
 @import camera_avfoundation;
 @import XCTest;
+#import "CameraPlugin_Test.h"
 #import <OCMock/OCMock.h>
 
 @interface ThreadSafeMethodChannelTests : XCTestCase

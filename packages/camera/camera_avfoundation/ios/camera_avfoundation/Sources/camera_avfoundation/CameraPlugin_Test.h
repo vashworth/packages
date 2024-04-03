@@ -4,7 +4,7 @@
 
 // This header is available in the Test module. Import via "@import camera_avfoundation.Test;"
 
-#import "CameraPlugin.h"
+#import <camera_avfoundation/CameraPlugin.h>
 #import "FLTCam.h"
 #import "FLTThreadSafeFlutterResult.h"
 

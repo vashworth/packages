@@ -3,11 +3,11 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
 @import XCTest;
 @import AVFoundation;
 #import <OCMock/OCMock.h>
 #import "CameraTestUtils.h"
+#import "FLTCam_Test.h"
 
 @interface StreamingTests : XCTestCase
 @property(readonly, nonatomic) FLTCam *camera;

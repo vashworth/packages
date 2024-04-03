@@ -3,10 +3,11 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
 @import XCTest;
 @import Flutter;
 
+#import "CameraPlugin_Test.h"
+#import "FLTCam_Test.h"
 #import <OCMock/OCMock.h>
 
 @interface CameraOrientationTests : XCTestCase

@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
+#import "FLTCam_Test.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

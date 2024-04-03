@@ -5,6 +5,8 @@
 @import camera_avfoundation;
 @import XCTest;
 
+#import "QueueUtils.h"
+
 @interface QueueUtilsTests : XCTestCase
 
 @end

@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
 @import XCTest;
 @import AVFoundation;
+#import "FLTCam_Test.h"
 #import <OCMock/OCMock.h>
 #import "MockFLTThreadSafeFlutterResult.h"
 

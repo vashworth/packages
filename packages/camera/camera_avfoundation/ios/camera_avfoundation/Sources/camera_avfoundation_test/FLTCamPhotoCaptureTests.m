@@ -3,11 +3,12 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
 @import AVFoundation;
 @import XCTest;
 #import <OCMock/OCMock.h>
 #import "CameraTestUtils.h"
+#import "QueueUtils.h"
+#import "FLTSavePhotoDelegate_Test.h"
 
 /// Includes test cases related to photo capture operations for FLTCam class.
 @interface FLTCamPhotoCaptureTests : XCTestCase

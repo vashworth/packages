@@ -5,6 +5,8 @@
 #ifndef MockFLTThreadSafeFlutterResult_h
 #define MockFLTThreadSafeFlutterResult_h
 
+#import "FLTThreadSafeFlutterResult.h"
+
 /**
  * Extends FLTThreadSafeFlutterResult to give tests the ability to wait on the result and
  * read the received result.
