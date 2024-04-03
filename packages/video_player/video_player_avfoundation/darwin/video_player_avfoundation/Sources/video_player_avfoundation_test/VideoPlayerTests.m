@@ -7,8 +7,8 @@
 @import XCTest;
 
 #import <OCMock/OCMock.h>
-#import <video_player_avfoundation/AVAssetTrackUtils.h>
-#import <video_player_avfoundation/FVPVideoPlayerPlugin_Test.h>
+#import "AVAssetTrackUtils.h"
+#import "FVPVideoPlayerPlugin_Test.h"
 
 // TODO(stuartmorgan): Convert to using mock registrars instead.
 NSObject<FlutterPluginRegistry> *GetPluginRegistry(void) {
@@ -139,18 +139,6 @@ NSObject<FlutterPluginRegistry> *GetPluginRegistry(void) {
 - (FVPDisplayLink *)displayLinkWithRegistrar:(id<FlutterPluginRegistrar>)registrar
                                     callback:(void (^)(void))callback {
   return self.displayLink;
-}
-
-@end
-
-/** Non-test implementation of the diplay link factory. */
-@interface FVPDefaultDisplayLinkFactory : NSObject <FVPDisplayLinkFactory>
-@end
-
-@implementation FVPDefaultDisplayLinkFactory
-- (FVPDisplayLink *)displayLinkWithRegistrar:(id<FlutterPluginRegistrar>)registrar
-                                    callback:(void (^)(void))callback {
-  return [[FVPDisplayLink alloc] initWithRegistrar:registrar callback:callback];
 }
 
 @end
