@@ -28,7 +28,7 @@ let package = Package(
                 .headerSearchPath("include/camera_avfoundation")
             ]
         ),
-         .target(
+        .target(
             name: "camera_avfoundation_test",
             dependencies: [
                 "camera_avfoundation",

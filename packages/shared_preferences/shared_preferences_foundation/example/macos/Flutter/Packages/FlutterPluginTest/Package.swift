@@ -9,14 +9,12 @@ let package = Package(
         .macOS("10.14"),
     ],
     dependencies: [
-        .package(path: "../ephemeral/FlutterGeneratedPluginSwiftPackage"),
-        .package(name: "shared_preferences_foundation", path: "../ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin/shared_preferences_foundation")
+        .package(name: "shared_preferences_foundation", path: "../../../../../darwin/shared_preferences_foundation")
     ],
     targets: [
         .testTarget(
             name: "FlutterPluginTest",
             dependencies: [
-                "FlutterGeneratedPluginSwiftPackage",
                 .product(name: "shared_preferences_foundation_test", package: "shared_preferences_foundation")
             ]
         )

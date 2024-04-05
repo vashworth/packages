@@ -81,8 +81,7 @@
 		33EBD39C26727BD10013E557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5067D74CB28D28AE3B3DD05B /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F020549CA1E801ACA3428F /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
-		783D3BC52BBCB6B40039672F /* FlutterPluginTest */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FlutterPluginTest; path = Packages/FlutterPluginTest; sourceTree = "<group>"; };
-		78A3181E2AECB45400862997 /* FlutterGeneratedPluginSwiftPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FlutterGeneratedPluginSwiftPackage; path = Packages/ephemeral/FlutterGeneratedPluginSwiftPackage; sourceTree = "<group>"; };
+		78F0CBA82BC0B21B00454EB7 /* FlutterPluginTest */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FlutterPluginTest; path = Packages/FlutterPluginTest; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		899489AD6AA35AECA4E2BEA6 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -159,7 +158,7 @@
 		33CEB47122A05771004F2AC0 /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
-				78A3181D2AECB45400862997 /* Packages */,
+				78F0CBA82BC0B21B00454EB7 /* FlutterPluginTest */,
 				335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */,
 				33CEB47222A05771004F2AC0 /* Flutter-Debug.xcconfig */,
 				33CEB47422A05771004F2AC0 /* Flutter-Release.xcconfig */,
@@ -187,15 +186,6 @@
 				33BA886A226E78AF003329D5 /* Configs */,
 			);
 			path = Runner;
-			sourceTree = "<group>";
-		};
-		78A3181D2AECB45400862997 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				783D3BC52BBCB6B40039672F /* FlutterPluginTest */,
-				78A3181E2AECB45400862997 /* FlutterGeneratedPluginSwiftPackage */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		96C1F6D923BD5787E8EBE8FC /* Pods */ = {
@@ -306,7 +296,7 @@
 			);
 			mainGroup = 33CC10E42044A3C60003C045;
 			packageReferences = (
-				781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "Flutter/Packages/ephemeral/FlutterGeneratedPluginSwiftPackage" */,
+				781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterGeneratedPluginSwiftPackage" */,
 			);
 			productRefGroup = 33CC10EE2044A3C60003C045 /* Products */;
 			projectDirPath = "";
@@ -811,9 +801,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "Flutter/Packages/ephemeral/FlutterGeneratedPluginSwiftPackage" */ = {
+		781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "Flutter/Packages/FlutterGeneratedPluginSwiftPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Flutter/Packages/ephemeral/FlutterGeneratedPluginSwiftPackage;
+			relativePath = Flutter/Packages/FlutterGeneratedPluginSwiftPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
 

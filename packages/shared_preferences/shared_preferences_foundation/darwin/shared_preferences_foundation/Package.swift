@@ -3,28 +3,21 @@
 
 import PackageDescription
 
-let pluginMinimumIOSVersion = Version("12.0.0")
-let pluginMinimumMacOSVersion = Version("10.14.0")
-
 let package = Package(
     name: "shared_preferences_foundation",
     platforms: [
-        flutterMinimumIOSVersion(pluginTargetVersion: pluginMinimumIOSVersion),
-        flutterMinimumMacOSVersion(pluginTargetVersion: pluginMinimumMacOSVersion)
+        .iOS("12.0"),
+        .macOS("10.14")
     ],
     products: [
         .library(name: "shared_preferences_foundation", targets: ["shared_preferences_foundation"]),
         .library(name: "shared_preferences_foundation_test", targets: ["shared_preferences_foundation_test"])
     ],
-    dependencies: [
-        flutterFrameworkDependency()
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "shared_preferences_foundation",
-            dependencies: [
-                .product(name: "Flutter", package: "Flutter")
-            ],
+            dependencies: [],
             resources: [
                 .process("Resources")
             ]
