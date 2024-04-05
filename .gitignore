@@ -14,7 +14,6 @@ pubspec.lock
 
 Podfile.lock
 Pods/
-**/Flutter/Packages/ephemeral
 .symlinks/
 
 *instrumentscli*.trace
@@ -38,6 +37,7 @@ keystore.properties
 **/Flutter/Flutter.podspec
 **/Flutter/Flutter.framework/
 **/Flutter/flutter_assets/
+**/Flutter/Packages/FlutterGeneratedPluginSwiftPackage
 
 ServiceDefinitions.json
 xcuserdata/
