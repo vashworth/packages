@@ -9,14 +9,12 @@ let package = Package(
         .iOS("12.0"),
     ],
     dependencies: [
-        .package(path: "../ephemeral/FlutterGeneratedPluginSwiftPackage"),
-        .package(name: "image_picker_ios", path: "../ephemeral/.symlinks/plugins/image_picker_ios/ios/image_picker_ios")
+        .package(name: "image_picker_ios", path: "../../../../../ios/image_picker_ios")
     ],
     targets: [
         .testTarget(
             name: "FlutterPluginTest",
             dependencies: [
-                "FlutterGeneratedPluginSwiftPackage",
                 .product(name: "image_picker_ios_test", package: "image_picker_ios")
             ]
         )
