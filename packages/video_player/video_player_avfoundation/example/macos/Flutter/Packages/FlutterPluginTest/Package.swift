@@ -9,14 +9,12 @@ let package = Package(
         .iOS("12.0"),
     ],
     dependencies: [
-        .package(path: "../ephemeral/FlutterGeneratedPluginSwiftPackage"),
-        .package(name: "video_player_avfoundation", path: "../ephemeral/.symlinks/plugins/video_player_avfoundation/darwin/video_player_avfoundation")
+        .package(name: "video_player_avfoundation", path: "../../../../../darwin/video_player_avfoundation")
     ],
     targets: [
         .testTarget(
             name: "FlutterPluginTest",
             dependencies: [
-                "FlutterGeneratedPluginSwiftPackage",
                 .product(name: "video_player_avfoundation_test", package: "video_player_avfoundation")
             ]
         )
