@@ -12,6 +12,7 @@
 		4510D964F3B1259FEDD3ABA6 /* libPods-Runner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7755F8F4BABC3D6A0BD4048B /* libPods-Runner.a */; };
 		68E4726A2836FF0C00BDDDAC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E472692836FF0C00BDDDAC /* MapKit.framework */; };
 		78A318202AECB46A00862997 /* FlutterGeneratedPluginSwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 78A3181F2AECB46A00862997 /* FlutterGeneratedPluginSwiftPackage */; };
+		78CF8D7A2BC5D1AB0051231B /* OCMock in Frameworks */ = {isa = PBXBuildFile; productRef = 78CF8D792BC5D1AB0051231B /* OCMock */; };
 		978B8F6F1D3862AE00F588F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */; };
 		97C146F31CF9000F007C117D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C146F21CF9000F007C117D /* main.m */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CF8D7A2BC5D1AB0051231B /* OCMock in Frameworks */,
 				68E4726A2836FF0C00BDDDAC /* MapKit.framework in Frameworks */,
 				FC8F35FC8CD533B128950487 /* libPods-RunnerTests.a in Frameworks */,
 			);
@@ -229,6 +231,9 @@
 				F7151F16265D7ED70028CB91 /* PBXTargetDependency */,
 			);
 			name = RunnerTests;
+			packageProductDependencies = (
+				78CF8D792BC5D1AB0051231B /* OCMock */,
+			);
 			productName = RunnerTests;
 			productReference = F7151F10265D7ED70028CB91 /* RunnerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -263,7 +268,8 @@
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
 			packageReferences = (
-				781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "FlutterGeneratedPluginSwiftPackage" */,
+				781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage" */,
+				78CF8D782BC5D1AB0051231B /* XCRemoteSwiftPackageReference "ocmock" */,
 			);
 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
 			projectDirPath = "";
@@ -589,7 +595,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				INFOPLIST_FILE = RunnerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,7 +615,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				INFOPLIST_FILE = RunnerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -655,16 +661,32 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "FlutterGeneratedPluginSwiftPackage" */ = {
+		781AD8BC2B33823900A9FFBB /* XCLocalSwiftPackageReference "Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		78CF8D782BC5D1AB0051231B /* XCRemoteSwiftPackageReference "ocmock" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/erikdoe/ocmock";
+			requirement = {
+				kind = revision;
+				revision = ef21a2ece3ee092f8ed175417718bdd9b8eb7c9a;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		78A3181F2AECB46A00862997 /* FlutterGeneratedPluginSwiftPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FlutterGeneratedPluginSwiftPackage;
+		};
+		78CF8D792BC5D1AB0051231B /* OCMock */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78CF8D782BC5D1AB0051231B /* XCRemoteSwiftPackageReference "ocmock" */;
+			productName = OCMock;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
