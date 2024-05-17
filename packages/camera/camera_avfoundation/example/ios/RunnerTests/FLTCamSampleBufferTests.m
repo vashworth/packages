@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 @import camera_avfoundation;
-@import camera_avfoundation.Test;
+@import camera_avfoundation_test;
 @import AVFoundation;
 @import XCTest;
 #import <OCMock/OCMock.h>
