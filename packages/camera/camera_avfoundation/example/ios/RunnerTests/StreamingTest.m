@@ -6,15 +6,6 @@
 #if __has_include(<camera_avfoundation/camera_avfoundation-umbrella.h>)
   @import camera_avfoundation.Test;
 #endif
-//@import camera_avfoundation_test;
-// #import <camera_avfoundation/CameraPlugin_Test.h>
-// #import <camera_avfoundation/CameraPermissionUtils.h>
-// #import <camera_avfoundation/CameraProperties.h>
-// #import <camera_avfoundation/FLTCam.h>
-// #import <camera_avfoundation/FLTCam_Test.h>
-// #import <camera_avfoundation/FLTSavePhotoDelegate_Test.h>
-// #import <camera_avfoundation/FLTThreadSafeEventChannel.h>
-// #import <camera_avfoundation/QueueUtils.h>
 @import XCTest;
 @import AVFoundation;
 #import <OCMock/OCMock.h>
