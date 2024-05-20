@@ -13,8 +13,7 @@ let package = Package(
     .iOS("12.0")
   ],
   products: [
-    .library(name: "camera-avfoundation", targets: ["camera_avfoundation"]),
-    .library(name: "camera-avfoundation-test", targets: ["camera_avfoundation_test"])
+    .library(name: "camera-avfoundation", targets: ["camera_avfoundation"])
   ],
   dependencies: [],
   targets: [
@@ -27,13 +26,6 @@ let package = Package(
       ],
       cSettings: [
           .headerSearchPath("include/camera_avfoundation")
-      ]
-    ),
-    .target(
-      name: "camera_avfoundation_test",
-      dependencies: ["camera_avfoundation"],
-      cSettings: [
-        .headerSearchPath("include/camera_avfoundation_test")
       ]
     )
   ]

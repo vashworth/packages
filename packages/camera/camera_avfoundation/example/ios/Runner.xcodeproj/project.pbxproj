@@ -15,7 +15,6 @@
 		334733EA2668111C00DCC49E /* CameraOrientationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BB767226653ABE00CE5A93 /* CameraOrientationTests.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		43ED1537282570DE00EB00DE /* AvailableCamerasTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ED1536282570DE00EB00DE /* AvailableCamerasTest.m */; };
-		783348772BF7D17D00CD08CD /* camera-avfoundation-test in Frameworks */ = {isa = PBXBuildFile; productRef = 783348762BF7D17D00CD08CD /* camera-avfoundation-test */; };
 		7833487A2BF7D19100CD08CD /* OCMock in Frameworks */ = {isa = PBXBuildFile; productRef = 783348792BF7D19100CD08CD /* OCMock */; };
 		788A065A27B0E02900533D74 /* StreamingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A065927B0E02900533D74 /* StreamingTest.m */; };
 		7D5FCCD42AEF9D0200FB7108 /* CameraSettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FCCD32AEF9D0200FB7108 /* CameraSettingsTests.m */; };
@@ -110,7 +109,6 @@
 			files = (
 				7833487A2BF7D19100CD08CD /* OCMock in Frameworks */,
 				25C3919135C3D981E6F800D0 /* libPods-RunnerTests.a in Frameworks */,
-				783348772BF7D17D00CD08CD /* camera-avfoundation-test in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +244,6 @@
 			);
 			name = RunnerTests;
 			packageProductDependencies = (
-				783348762BF7D17D00CD08CD /* camera-avfoundation-test */,
 				783348792BF7D19100CD08CD /* OCMock */,
 			);
 			productName = camera_exampleTests;
@@ -304,7 +301,6 @@
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
 			packageReferences = (
-				783348752BF7D17D00CD08CD /* XCLocalSwiftPackageReference "../../ios/camera_avfoundation" */,
 				783348782BF7D19100CD08CD /* XCRemoteSwiftPackageReference "ocmock" */,
 			);
 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
@@ -746,13 +742,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		783348752BF7D17D00CD08CD /* XCLocalSwiftPackageReference "../../ios/camera_avfoundation" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../ios/camera_avfoundation;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		783348782BF7D19100CD08CD /* XCRemoteSwiftPackageReference "ocmock" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -765,10 +754,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		783348762BF7D17D00CD08CD /* camera-avfoundation-test */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "camera-avfoundation-test";
-		};
 		783348792BF7D19100CD08CD /* OCMock */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 783348782BF7D19100CD08CD /* XCRemoteSwiftPackageReference "ocmock" */;
